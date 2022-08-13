@@ -10,8 +10,7 @@
 body {
   background-image: url("/images/backcover.svg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 110% 100%;
+  background-position: 110% 110%;
 }
 /* nav {
   display: flex;
@@ -84,4 +83,44 @@ nav,
 }
 .imgs-div > img {
   width: 600px;
+}
+@media screen and (max-width:678px) {
+  .main-div{
+    padding: 10px;
+  }
+  .nav-items{
+    display: none;
+  }
+  .signin-btn{
+    float: right;
+  }
+  .intro-section{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .imgs-div img{
+    margin-top: 50px;
+    width: 300px;
+  }
+  .vector-img{
+    display: none;
+  }
+  .vector-dot{
+    display: none;
+  }
+  body {
+    background-image: none;
+  }
+  .left-section{
+    width: 300px;
+    text-align: center;
+  }
+  .left-section h1{
+    font-size: 50px;
+    margin-top: 20px;
+  }
+  .left-section h4{
+    width: 300px;
+    margin-top: 10px;
+  }
 }
